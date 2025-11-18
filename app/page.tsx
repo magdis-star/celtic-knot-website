@@ -427,18 +427,6 @@ export default function Home() {
 
               <details className="bg-white rounded-xl p-6 shadow-lg border-l-8 border-[#b45309] group">
                 <summary className="text-xl font-bold text-[#1e3a2d] cursor-pointer list-none flex justify-between items-center">
-                  Do you work with LGBTQ+ couples?
-                  <svg className="w-5 h-5 text-[#b45309] transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                  </svg>
-                </summary>
-                <p className="text-gray-700 mt-4 leading-relaxed">
-                  Absolutely! I celebrate and honor all love stories, identities, and relationships. My ceremonies are fully inclusive and tailored to reflect your unique journey and values.
-                </p>
-              </details>
-
-              <details className="bg-white rounded-xl p-6 shadow-lg border-l-8 border-[#b45309] group">
-                <summary className="text-xl font-bold text-[#1e3a2d] cursor-pointer list-none flex justify-between items-center">
                   What is a handfasting ceremony?
                   <svg className="w-5 h-5 text-[#b45309] transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
@@ -458,18 +446,6 @@ export default function Home() {
                 </summary>
                 <p className="text-gray-700 mt-4 leading-relaxed">
                   Of course! You can write your own vows, use traditional vows, or work with me to craft something unique. I can provide guidance, templates, and feedback to help you create vows that feel authentic and meaningful to you.
-                </p>
-              </details>
-
-              <details className="bg-white rounded-xl p-6 shadow-lg border-l-8 border-[#b45309] group">
-                <summary className="text-xl font-bold text-[#1e3a2d] cursor-pointer list-none flex justify-between items-center">
-                  What happens if you&apos;re sick on our wedding day?
-                  <svg className="w-5 h-5 text-[#b45309] transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                  </svg>
-                </summary>
-                <p className="text-gray-700 mt-4 leading-relaxed">
-                  I have a network of trusted backup celebrants who are familiar with my style and standards. In the unlikely event of an emergency, I will ensure a qualified professional is there to perform your ceremony exactly as planned.
                 </p>
               </details>
             </div>

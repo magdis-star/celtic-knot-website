@@ -51,18 +51,15 @@ export default function Home() {
           {/* Logo / Brand Name */}
           <button
             onClick={() => scrollToSection('home')}
-            className="flex items-center gap-3 hover:opacity-80 transition"
+            className="flex items-center hover:opacity-80 transition"
           >
             <Image
-              src="/Tie-the-Celtic-Knot1.png"
-              alt="Tie the Celtic Knot Logo"
-              width={50}
-              height={50}
-              className="w-12 h-12"
+              src="/celtic-heart-logo.svg"
+              alt="Tie the Celtic Knot - Celtic Heart Logo"
+              width={180}
+              height={200}
+              className="h-16 w-auto"
             />
-            <span className="text-2xl font-bold text-[#1e3a2d] font-serif tracking-tight">
-              Tie the Celtic Knot
-            </span>
           </button>
 
           {/* Desktop Navigation */}

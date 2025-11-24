@@ -1,0 +1,51 @@
+<svg width="400" height="450" viewBox="0 0 400 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Celtic Heart Knot -->
+  <g transform="translate(200, 160)">
+    <!-- Outer heart shape with Celtic knot weaving -->
+    <path d="M 0,-80 C -25,-110 -65,-110 -80,-85 C -95,-60 -95,-30 -80,-5 L 0,85 L 80,-5 C 95,-30 95,-60 80,-85 C 65,-110 25,-110 0,-80 Z"
+          fill="none" stroke="#1e3a2d" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Inner Celtic knot pattern - interwoven design -->
+    <!-- Horizontal weave -->
+    <path d="M -40,-20 L -10,-20 L 10,0 L 40,0"
+          fill="none" stroke="#1e3a2d" stroke-width="14" stroke-linecap="round"/>
+    <path d="M 40,-20 L 10,-20 L -10,0 L -40,0"
+          fill="none" stroke="#1e3a2d" stroke-width="14" stroke-linecap="round"/>
+
+    <!-- Vertical weave -->
+    <path d="M 0,-40 L 0,-10 L 20,10 L 20,40"
+          fill="none" stroke="#1e3a2d" stroke-width="14" stroke-linecap="round"/>
+    <path d="M 0,40 L 0,10 L -20,-10 L -20,-40"
+          fill="none" stroke="#1e3a2d" stroke-width="14" stroke-linecap="round"/>
+
+    <!-- Center knot decoration -->
+    <circle cx="0" cy="0" r="8" fill="#1e3a2d"/>
+
+    <!-- Celtic spiral accents in corners -->
+    <path d="M -35,-35 Q -30,-40 -25,-35 Q -30,-30 -35,-35"
+          fill="#1e3a2d"/>
+    <path d="M 35,-35 Q 30,-40 25,-35 Q 30,-30 35,-35"
+          fill="#1e3a2d"/>
+
+    <!-- Decorative dots -->
+    <circle cx="-50" cy="-45" r="4" fill="#1e3a2d"/>
+    <circle cx="50" cy="-45" r="4" fill="#1e3a2d"/>
+    <circle cx="-55" cy="15" r="4" fill="#1e3a2d"/>
+    <circle cx="55" cy="15" r="4" fill="#1e3a2d"/>
+  </g>
+
+  <!-- Text: Tie the Celtic Knot -->
+  <text x="200" y="350" font-family="Libre Baskerville, serif" font-size="32" font-weight="700" fill="#1e3a2d" text-anchor="middle">
+    Tie the Celtic Knot
+  </text>
+
+  <!-- Decorative line under text -->
+  <line x1="80" y1="365" x2="320" y2="365" stroke="#1e3a2d" stroke-width="2"/>
+  <circle cx="80" cy="365" r="3" fill="#1e3a2d"/>
+  <circle cx="320" cy="365" r="3" fill="#1e3a2d"/>
+
+  <!-- Tagline -->
+  <text x="200" y="395" font-family="Inter, sans-serif" font-size="14" font-weight="400" fill="#1e3a2d" text-anchor="middle" opacity="0.8">
+    Humanist Wedding Celebrant
+  </text>
+</svg>

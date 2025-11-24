@@ -44,9 +44,9 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen bg-stone-50">
+    <div className="min-h-screen bg-[#faf8f5]">
       {/* Fixed Header Navigation */}
-      <header className="fixed top-0 left-0 w-full shadow-lg z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100">
+      <header className="fixed top-0 left-0 w-full shadow-md z-50 bg-[#f4e4d7]/95 backdrop-blur-sm border-b border-[#e8c4b8]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
           {/* Logo / Brand Name */}
           <button
@@ -60,28 +60,28 @@ export default function Home() {
               height={50}
               className="w-12 h-12"
             />
-            <span className="text-2xl font-bold text-[#1e3a2d] font-serif tracking-tight">
+            <span className="text-2xl font-bold text-[#8b6f66] font-serif tracking-tight">
               Tie the Celtic Knot
             </span>
           </button>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8 font-medium items-center">
-            <button onClick={() => scrollToSection('services')} className="text-gray-600 hover:text-[#1e3a2d] transition">
+            <button onClick={() => scrollToSection('services')} className="text-gray-600 hover:text-[#d4a59a] transition">
               Services
             </button>
-            <button onClick={() => scrollToSection('process')} className="text-gray-600 hover:text-[#1e3a2d] transition">
+            <button onClick={() => scrollToSection('process')} className="text-gray-600 hover:text-[#d4a59a] transition">
               Your Process
             </button>
-            <button onClick={() => scrollToSection('story')} className="text-gray-600 hover:text-[#1e3a2d] transition">
+            <button onClick={() => scrollToSection('story')} className="text-gray-600 hover:text-[#d4a59a] transition">
               My Story
             </button>
-            <button onClick={() => scrollToSection('testimonials')} className="text-gray-600 hover:text-[#1e3a2d] transition">
+            <button onClick={() => scrollToSection('testimonials')} className="text-gray-600 hover:text-[#d4a59a] transition">
               Reviews
             </button>
             <button
               onClick={() => scrollToSection('contact')}
-              className="bg-[#1e3a2d] text-white px-4 py-2 rounded-lg hover:bg-[#0f1f19] transition shadow-md"
+              className="bg-[#d4a59a] text-white px-4 py-2 rounded-lg hover:bg-[#b89086] transition shadow-md"
             >
               Check Availability
             </button>
@@ -90,7 +90,7 @@ export default function Home() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="md:hidden p-2 rounded-lg text-[#1e3a2d] hover:bg-gray-100"
+            className="md:hidden p-2 rounded-lg text-[#8b6f66] hover:bg-[#f4e4d7]"
           >
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               {mobileMenuOpen ? (
@@ -104,23 +104,23 @@ export default function Home() {
 
         {/* Mobile Menu Overlay */}
         {mobileMenuOpen && (
-          <div className="md:hidden bg-white shadow-xl py-4 transition-all duration-300 ease-in-out">
+          <div className="md:hidden bg-[#faf8f5] shadow-xl py-4 transition-all duration-300 ease-in-out">
             <nav className="flex flex-col space-y-3 px-4">
-              <button onClick={() => scrollToSection('services')} className="text-gray-700 hover:text-[#1e3a2d] py-2 border-b border-gray-100 text-left">
+              <button onClick={() => scrollToSection('services')} className="text-gray-700 hover:text-[#d4a59a] py-2 border-b border-[#e8c4b8] text-left">
                 Services
               </button>
-              <button onClick={() => scrollToSection('process')} className="text-gray-700 hover:text-[#1e3a2d] py-2 border-b border-gray-100 text-left">
+              <button onClick={() => scrollToSection('process')} className="text-gray-700 hover:text-[#d4a59a] py-2 border-b border-[#e8c4b8] text-left">
                 Your Process
               </button>
-              <button onClick={() => scrollToSection('story')} className="text-gray-700 hover:text-[#1e3a2d] py-2 border-b border-gray-100 text-left">
+              <button onClick={() => scrollToSection('story')} className="text-gray-700 hover:text-[#d4a59a] py-2 border-b border-[#e8c4b8] text-left">
                 My Story
               </button>
-              <button onClick={() => scrollToSection('testimonials')} className="text-gray-700 hover:text-[#1e3a2d] py-2 border-b border-gray-100 text-left">
+              <button onClick={() => scrollToSection('testimonials')} className="text-gray-700 hover:text-[#d4a59a] py-2 border-b border-[#e8c4b8] text-left">
                 Reviews
               </button>
               <button
                 onClick={() => scrollToSection('contact')}
-                className="bg-[#1e3a2d] text-white text-center py-3 mt-2 rounded-lg hover:bg-[#0f1f19] transition shadow-lg"
+                className="bg-[#d4a59a] text-white text-center py-3 mt-2 rounded-lg hover:bg-[#b89086] transition shadow-lg"
               >
                 Check Availability
               </button>
@@ -133,9 +133,9 @@ export default function Home() {
         {/* 1. Hero Section */}
         <section
           id="home"
-          className="pt-32 pb-16 bg-[#1e3a2d] text-white relative overflow-hidden"
+          className="pt-32 pb-16 bg-[#d4a59a] text-white relative overflow-hidden"
           style={{
-            backgroundImage: 'linear-gradient(rgba(30, 58, 45, 0.75), rgba(30, 58, 45, 0.75)), url(/Hand-fast-1.jpg)',
+            backgroundImage: 'linear-gradient(rgba(212, 165, 154, 0.75), rgba(139, 111, 102, 0.80)), url(/Hand-fast-1.jpg)',
             backgroundSize: 'cover',
             backgroundPosition: 'center'
           }}
@@ -150,7 +150,7 @@ export default function Home() {
               </p>
               <button
                 onClick={() => scrollToSection('contact')}
-                className="inline-block bg-[#1e3a2d] text-white text-lg font-semibold px-8 py-4 rounded-xl shadow-2xl uppercase tracking-wider transform hover:scale-105 transition hover:bg-[#0f1f19]"
+                className="inline-block bg-[#8b6f66] text-white text-lg font-semibold px-8 py-4 rounded-xl shadow-2xl uppercase tracking-wider transform hover:scale-105 transition hover:bg-[#6b5651]"
               >
                 Inquire & Check Availability
               </button>
@@ -159,14 +159,14 @@ export default function Home() {
         </section>
 
         {/* Wedding Spotlight Section */}
-        <section className="py-20" style={{background: 'linear-gradient(to bottom right, #e8f5e9, #dcedc8)'}}>
+        <section className="py-20" style={{background: 'linear-gradient(to bottom right, #fdf5f3, #f4e4d7)'}}>
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
-                <div className="inline-block bg-[#1e3a2d] px-4 py-2 rounded-full text-sm font-bold uppercase mb-4 text-white">
+                <div className="inline-block bg-[#d4a59a] px-4 py-2 rounded-full text-sm font-bold uppercase mb-4 text-white">
                   Specializing in Weddings
                 </div>
-                <h2 className="text-4xl md:text-5xl font-bold font-serif mb-6 text-[#1e3a2d]">
+                <h2 className="text-4xl md:text-5xl font-bold font-serif mb-6 text-[#8b6f66]">
                   Your Celtic Wedding Ceremony Awaits
                 </h2>
                 <p className="text-xl text-gray-700 mb-6 leading-relaxed">
@@ -174,19 +174,19 @@ export default function Home() {
                 </p>
                 <ul className="space-y-4 mb-8">
                   <li className="flex items-start">
-                    <svg className="w-6 h-6 text-[#1e3a2d] mr-3 mt-1 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-6 h-6 text-[#d4a59a] mr-3 mt-1 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
                     <span className="text-lg text-gray-700">Fully personalized handfasting & ribbon-tying ceremonies</span>
                   </li>
                   <li className="flex items-start">
-                    <svg className="w-6 h-6 text-[#1e3a2d] mr-3 mt-1 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-6 h-6 text-[#d4a59a] mr-3 mt-1 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
                     <span className="text-lg text-gray-700">Licensed Ontario Celebrant - legally binding ceremonies</span>
                   </li>
                   <li className="flex items-start">
-                    <svg className="w-6 h-6 text-[#1e3a2d] mr-3 mt-1 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-6 h-6 text-[#d4a59a] mr-3 mt-1 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
                     <span className="text-lg text-gray-700">Nature-based, Celtic-inspired, & humanist traditions</span>
@@ -194,7 +194,7 @@ export default function Home() {
                 </ul>
                 <button
                   onClick={() => scrollToSection('contact')}
-                  className="bg-[#1e3a2d] text-white px-8 py-4 rounded-xl text-lg font-bold hover:bg-[#0f1f19] transition shadow-2xl"
+                  className="bg-[#d4a59a] text-white px-8 py-4 rounded-xl text-lg font-bold hover:bg-[#b89086] transition shadow-2xl"
                 >
                   Book Your Wedding Ceremony
                 </button>
@@ -212,11 +212,11 @@ export default function Home() {
         </section>
 
         {/* 2. Services Section */}
-        <section id="services" className="py-24 bg-white">
+        <section id="services" className="py-24 bg-[#faf8f5]">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
-              <span className="text-base font-semibold uppercase text-[#1e3a2d]">We Also Offer</span>
-              <h2 className="mt-2 text-4xl font-bold text-[#1e3a2d] font-serif">Other Meaningful Ceremonies</h2>
+              <span className="text-base font-semibold uppercase text-[#d4a59a]">We Also Offer</span>
+              <h2 className="mt-2 text-4xl font-bold text-[#8b6f66] font-serif">Other Meaningful Ceremonies</h2>
               <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
                 Beyond weddings, I create heartfelt ceremonies for all of life&apos;s important moments
               </p>
@@ -225,17 +225,17 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
 
               {/* Child Naming Service */}
-              <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition border border-gray-100 text-center">
-                <div className="w-28 h-28 bg-[#1e3a2d] rounded-full flex items-center justify-center mb-6 mx-auto">
+              <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition border border-[#e8c4b8] text-center">
+                <div className="w-28 h-28 bg-[#d4a59a] rounded-full flex items-center justify-center mb-6 mx-auto">
                   <svg className="w-16 h-16 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
                   </svg>
                 </div>
-                <h3 className="text-2xl font-semibold text-[#1e3a2d] font-serif mb-3">Child Naming Ceremonies</h3>
+                <h3 className="text-2xl font-semibold text-[#8b6f66] font-serif mb-3">Child Naming Ceremonies</h3>
                 <p className="text-gray-600 mb-4">
                   A non-religious, joyful celebration of new life. Honouring the child and welcoming them into the community with meaningful readings and symbolic acts.
                 </p>
-                <button onClick={() => scrollToSection('contact')} className="text-[#1e3a2d] hover:underline font-medium inline-flex items-center">
+                <button onClick={() => scrollToSection('contact')} className="text-[#d4a59a] hover:underline font-medium inline-flex items-center">
                   Celebrate Your Child
                   <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -244,17 +244,17 @@ export default function Home() {
               </div>
 
               {/* Memorial Service */}
-              <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition border border-gray-100 text-center">
-                <div className="w-28 h-28 bg-[#1e3a2d] rounded-full flex items-center justify-center mb-6 mx-auto">
+              <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition border border-[#e8c4b8] text-center">
+                <div className="w-28 h-28 bg-[#d4a59a] rounded-full flex items-center justify-center mb-6 mx-auto">
                   <svg className="w-16 h-16 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                   </svg>
                 </div>
-                <h3 className="text-2xl font-semibold text-[#1e3a2d] font-serif mb-3">Funerals & Memorials</h3>
+                <h3 className="text-2xl font-semibold text-[#8b6f66] font-serif mb-3">Funerals & Memorials</h3>
                 <p className="text-gray-600 mb-4">
                   Warm, authentic, and compassionate services that honour the life lived. Creating a dignified and personal tribute that brings comfort and reflection.
                 </p>
-                <button onClick={() => scrollToSection('contact')} className="text-[#1e3a2d] hover:underline font-medium inline-flex items-center">
+                <button onClick={() => scrollToSection('contact')} className="text-[#d4a59a] hover:underline font-medium inline-flex items-center">
                   Arrange a Tribute
                   <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -269,8 +269,8 @@ export default function Home() {
         <section id="pricing" className="py-24 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
-              <span className="text-base font-semibold uppercase text-[#1e3a2d]">Investment in Your Special Day</span>
-              <h2 className="mt-2 text-4xl font-bold text-[#1e3a2d] font-serif">Service Packages</h2>
+              <span className="text-base font-semibold uppercase text-[#d4a59a]">Investment in Your Special Day</span>
+              <h2 className="mt-2 text-4xl font-bold text-[#8b6f66] font-serif">Service Packages</h2>
               <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
                 Choose the package that best suits your ceremony needs
               </p>
@@ -279,12 +279,12 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
 
               {/* Deluxe Wedding Ceremony */}
-              <div className="bg-gradient-to-br from-[#1e3a2d] to-[#0f1f19] p-8 rounded-xl shadow-2xl hover:shadow-3xl transition relative overflow-hidden border-4 border-[#1e3a2d]">
-                <div className="absolute top-0 right-0 bg-yellow-400 text-[#1e3a2d] px-4 py-1 text-sm font-bold rounded-bl-lg">
+              <div className="bg-gradient-to-br from-[#d4a59a] to-[#b89086] p-8 rounded-xl shadow-2xl hover:shadow-3xl transition relative overflow-hidden border-4 border-[#d4a59a]">
+                <div className="absolute top-0 right-0 bg-yellow-400 text-[#8b6f66] px-4 py-1 text-sm font-bold rounded-bl-lg">
                   MOST POPULAR
                 </div>
                 <h3 className="text-2xl font-bold text-white font-serif mb-2">Deluxe Wedding Ceremony</h3>
-                <div className="text-4xl font-bold text-yellow-400 mb-6">$895</div>
+                <div className="text-4xl font-bold text-white mb-6">$895</div>
                 <ul className="space-y-3 mb-6 text-white">
                   <li className="flex items-start">
                     <svg className="w-5 h-5 text-yellow-400 mr-2 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -325,49 +325,49 @@ export default function Home() {
                 </ul>
                 <button
                   onClick={() => scrollToSection('contact')}
-                  className="w-full bg-yellow-400 text-[#1e3a2d] py-3 rounded-lg font-bold hover:bg-yellow-300 transition"
+                  className="w-full bg-yellow-400 text-[#8b6f66] py-3 rounded-lg font-bold hover:bg-yellow-300 transition"
                 >
                   Book This Package
                 </button>
               </div>
 
               {/* Full Service Wedding Ceremony */}
-              <div className="bg-white p-8 rounded-xl shadow-xl hover:shadow-2xl transition border-2 border-gray-200">
-                <h3 className="text-2xl font-bold text-[#1e3a2d] font-serif mb-2">Full Service Wedding</h3>
-                <div className="text-4xl font-bold text-[#1e3a2d] mb-6">$650</div>
+              <div className="bg-white p-8 rounded-xl shadow-xl hover:shadow-2xl transition border-2 border-[#e8c4b8]">
+                <h3 className="text-2xl font-bold text-[#8b6f66] font-serif mb-2">Full Service Wedding</h3>
+                <div className="text-4xl font-bold text-[#8b6f66] mb-6">$650</div>
                 <ul className="space-y-3 mb-6 text-gray-700">
                   <li className="flex items-start">
-                    <svg className="w-5 h-5 text-[#1e3a2d] mr-2 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-5 h-5 text-[#d4a59a] mr-2 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
                     </svg>
                     <span>Initial meeting included</span>
                   </li>
                   <li className="flex items-start">
-                    <svg className="w-5 h-5 text-[#1e3a2d] mr-2 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-5 h-5 text-[#d4a59a] mr-2 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
                     </svg>
                     <span>One consultation (one to two weeks before)</span>
                   </li>
                   <li className="flex items-start">
-                    <svg className="w-5 h-5 text-[#1e3a2d] mr-2 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-5 h-5 text-[#d4a59a] mr-2 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
                     </svg>
                     <span>Unlimited phone calls & emails</span>
                   </li>
                   <li className="flex items-start">
-                    <svg className="w-5 h-5 text-[#1e3a2d] mr-2 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-5 h-5 text-[#d4a59a] mr-2 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
                     </svg>
                     <span>One rehearsal included</span>
                   </li>
                   <li className="flex items-start">
-                    <svg className="w-5 h-5 text-[#1e3a2d] mr-2 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-5 h-5 text-[#d4a59a] mr-2 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
                     </svg>
                     <span>Customised service with rituals & traditional elements</span>
                   </li>
                   <li className="flex items-start">
-                    <svg className="w-5 h-5 text-[#1e3a2d] mr-2 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-5 h-5 text-[#d4a59a] mr-2 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
                     </svg>
                     <span>Paperwork filled out & mailed within 24 hours</span>
@@ -375,43 +375,43 @@ export default function Home() {
                 </ul>
                 <button
                   onClick={() => scrollToSection('contact')}
-                  className="w-full bg-[#1e3a2d] text-white py-3 rounded-lg font-bold hover:bg-[#0f1f19] transition"
+                  className="w-full bg-[#d4a59a] text-white py-3 rounded-lg font-bold hover:bg-[#b89086] transition"
                 >
                   Book This Package
                 </button>
               </div>
 
               {/* Custom Ceremony */}
-              <div className="bg-white p-8 rounded-xl shadow-xl hover:shadow-2xl transition border-2 border-gray-200">
-                <h3 className="text-2xl font-bold text-[#1e3a2d] font-serif mb-2">Custom Ceremony</h3>
-                <div className="text-4xl font-bold text-[#1e3a2d] mb-6">$450</div>
+              <div className="bg-white p-8 rounded-xl shadow-xl hover:shadow-2xl transition border-2 border-[#e8c4b8]">
+                <h3 className="text-2xl font-bold text-[#8b6f66] font-serif mb-2">Custom Ceremony</h3>
+                <div className="text-4xl font-bold text-[#8b6f66] mb-6">$450</div>
                 <ul className="space-y-3 mb-6 text-gray-700">
                   <li className="flex items-start">
-                    <svg className="w-5 h-5 text-[#1e3a2d] mr-2 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-5 h-5 text-[#d4a59a] mr-2 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
                     </svg>
                     <span>Initial meeting included</span>
                   </li>
                   <li className="flex items-start">
-                    <svg className="w-5 h-5 text-[#1e3a2d] mr-2 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-5 h-5 text-[#d4a59a] mr-2 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
                     </svg>
                     <span>One consultation (one to two weeks before)</span>
                   </li>
                   <li className="flex items-start">
-                    <svg className="w-5 h-5 text-[#1e3a2d] mr-2 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-5 h-5 text-[#d4a59a] mr-2 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
                     </svg>
                     <span>Unlimited phone calls & emails</span>
                   </li>
                   <li className="flex items-start">
-                    <svg className="w-5 h-5 text-[#1e3a2d] mr-2 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-5 h-5 text-[#d4a59a] mr-2 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
                     </svg>
                     <span>Customised service with rituals & traditional elements</span>
                   </li>
                   <li className="flex items-start">
-                    <svg className="w-5 h-5 text-[#1e3a2d] mr-2 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-5 h-5 text-[#d4a59a] mr-2 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
                     </svg>
                     <span>Paperwork filled out & mailed within 24 hours</span>
@@ -419,37 +419,37 @@ export default function Home() {
                 </ul>
                 <button
                   onClick={() => scrollToSection('contact')}
-                  className="w-full bg-[#1e3a2d] text-white py-3 rounded-lg font-bold hover:bg-[#0f1f19] transition"
+                  className="w-full bg-[#d4a59a] text-white py-3 rounded-lg font-bold hover:bg-[#b89086] transition"
                 >
                   Book This Package
                 </button>
               </div>
 
               {/* Basic Signing Package */}
-              <div className="bg-white p-8 rounded-xl shadow-xl hover:shadow-2xl transition border-2 border-gray-200">
-                <h3 className="text-2xl font-bold text-[#1e3a2d] font-serif mb-2">Basic Signing Package</h3>
-                <div className="text-4xl font-bold text-[#1e3a2d] mb-6">$300</div>
+              <div className="bg-white p-8 rounded-xl shadow-xl hover:shadow-2xl transition border-2 border-[#e8c4b8]">
+                <h3 className="text-2xl font-bold text-[#8b6f66] font-serif mb-2">Basic Signing Package</h3>
+                <div className="text-4xl font-bold text-[#8b6f66] mb-6">$300</div>
                 <ul className="space-y-3 mb-6 text-gray-700">
                   <li className="flex items-start">
-                    <svg className="w-5 h-5 text-[#1e3a2d] mr-2 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-5 h-5 text-[#d4a59a] mr-2 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
                     </svg>
                     <span>Initial meeting included</span>
                   </li>
                   <li className="flex items-start">
-                    <svg className="w-5 h-5 text-[#1e3a2d] mr-2 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-5 h-5 text-[#d4a59a] mr-2 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
                     </svg>
                     <span>One consultation (one to two weeks before)</span>
                   </li>
                   <li className="flex items-start">
-                    <svg className="w-5 h-5 text-[#1e3a2d] mr-2 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-5 h-5 text-[#d4a59a] mr-2 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
                     </svg>
                     <span>Unlimited phone calls & emails</span>
                   </li>
                   <li className="flex items-start">
-                    <svg className="w-5 h-5 text-[#1e3a2d] mr-2 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-5 h-5 text-[#d4a59a] mr-2 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
                     </svg>
                     <span>Paperwork filled out & mailed within 24 hours</span>
@@ -457,7 +457,7 @@ export default function Home() {
                 </ul>
                 <button
                   onClick={() => scrollToSection('contact')}
-                  className="w-full bg-[#1e3a2d] text-white py-3 rounded-lg font-bold hover:bg-[#0f1f19] transition"
+                  className="w-full bg-[#d4a59a] text-white py-3 rounded-lg font-bold hover:bg-[#b89086] transition"
                 >
                   Book This Package
                 </button>
@@ -468,21 +468,21 @@ export default function Home() {
         </section>
 
         {/* 3. Ceremony Process Section */}
-        <section id="process" className="py-24 bg-stone-100">
+        <section id="process" className="py-24 bg-[#f4e4d7]">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
-              <span className="text-base font-semibold uppercase text-[#1e3a2d]">Your Journey Together</span>
-              <h2 className="mt-2 text-4xl font-bold text-[#1e3a2d] font-serif">Creating Your Perfect Ceremony: The 3-Step Process</h2>
+              <span className="text-base font-semibold uppercase text-[#d4a59a]">Your Journey Together</span>
+              <h2 className="mt-2 text-4xl font-bold text-[#8b6f66] font-serif">Creating Your Perfect Ceremony: The 3-Step Process</h2>
             </div>
 
             <div className="max-w-5xl mx-auto space-y-12">
               {/* Step 1 */}
               <div className="flex flex-col md:flex-row items-center gap-6">
-                <div className="w-16 h-16 bg-[#1e3a2d] rounded-full flex items-center justify-center text-white text-2xl font-bold shrink-0 shadow-xl">
+                <div className="w-16 h-16 bg-[#d4a59a] rounded-full flex items-center justify-center text-white text-2xl font-bold shrink-0 shadow-xl">
                   1
                 </div>
-                <div className="flex-1 bg-white p-6 rounded-xl shadow-lg border-t-4 border-[#1e3a2d]">
-                  <h3 className="text-2xl font-bold text-[#1e3a2d] mb-3">Discovery & Vision</h3>
+                <div className="flex-1 bg-white p-6 rounded-xl shadow-lg border-t-4 border-[#d4a59a]">
+                  <h3 className="text-2xl font-bold text-[#8b6f66] mb-3">Discovery & Vision</h3>
                   <p className="text-gray-600">
                     We begin with a connection call to discuss your date, location, and the specific emotions you want your ceremony to evoke. We talk about your story and your specific cultural or symbolic desires (like handfasting).
                   </p>
@@ -491,11 +491,11 @@ export default function Home() {
 
               {/* Step 2 */}
               <div className="flex flex-col md:flex-row items-center gap-6">
-                <div className="w-16 h-16 bg-[#1e3a2d] rounded-full flex items-center justify-center text-white text-2xl font-bold shrink-0 shadow-xl">
+                <div className="w-16 h-16 bg-[#d4a59a] rounded-full flex items-center justify-center text-white text-2xl font-bold shrink-0 shadow-xl">
                   2
                 </div>
-                <div className="flex-1 bg-white p-6 rounded-xl shadow-lg border-t-4 border-[#1e3a2d]">
-                  <h3 className="text-2xl font-bold text-[#1e3a2d] mb-3">Deep Dive & Custom Drafting</h3>
+                <div className="flex-1 bg-white p-6 rounded-xl shadow-lg border-t-4 border-[#d4a59a]">
+                  <h3 className="text-2xl font-bold text-[#8b6f66] mb-3">Deep Dive & Custom Drafting</h3>
                   <p className="text-gray-600">
                     I conduct a &quot;story deep dive&quot; to gather all the rich details. I then meticulously draft a custom script, incorporating your vows, readings, and unique rituals, ensuring every word feels true to you.
                   </p>
@@ -504,11 +504,11 @@ export default function Home() {
 
               {/* Step 3 */}
               <div className="flex flex-col md:flex-row items-center gap-6">
-                <div className="w-16 h-16 bg-[#1e3a2d] rounded-full flex items-center justify-center text-white text-2xl font-bold shrink-0 shadow-xl">
+                <div className="w-16 h-16 bg-[#d4a59a] rounded-full flex items-center justify-center text-white text-2xl font-bold shrink-0 shadow-xl">
                   3
                 </div>
-                <div className="flex-1 bg-white p-6 rounded-xl shadow-lg border-t-4 border-[#1e3a2d]">
-                  <h3 className="text-2xl font-bold text-[#1e3a2d] mb-3">Rehearsal & The Celebration</h3>
+                <div className="flex-1 bg-white p-6 rounded-xl shadow-lg border-t-4 border-[#d4a59a]">
+                  <h3 className="text-2xl font-bold text-[#8b6f66] mb-3">Rehearsal & The Celebration</h3>
                   <p className="text-gray-600">
                     We finalize the details, and I handle all necessary paperwork. On the day, I deliver the ceremony with warmth, confidence, and professionalism, allowing you to fully relax and immerse yourselves in the moment.
                   </p>
@@ -521,17 +521,17 @@ export default function Home() {
         {/* 4. Pricing Section */}
 
         {/* 5. Testimonials Section */}
-        <section id="testimonials" className="py-24 bg-stone-100">
+        <section id="testimonials" className="py-24 bg-[#faf8f5]">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
-              <span className="text-base font-semibold uppercase text-[#1e3a2d]">Social Proof</span>
-              <h2 className="mt-2 text-4xl font-bold text-[#1e3a2d] font-serif">What Couples & Families Are Saying</h2>
+              <span className="text-base font-semibold uppercase text-[#d4a59a]">Social Proof</span>
+              <h2 className="mt-2 text-4xl font-bold text-[#8b6f66] font-serif">What Couples & Families Are Saying</h2>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {/* Review 1 */}
-              <div className="bg-white p-8 rounded-xl shadow-xl border-t-4 border-[#1e3a2d]">
-                <div className="flex text-[#1e3a2d] mb-4">
+              <div className="bg-white p-8 rounded-xl shadow-xl border-t-4 border-[#d4a59a]">
+                <div className="flex text-[#d4a59a] mb-4">
                   {[...Array(5)].map((_, i) => (
                     <svg key={i} className="w-5 h-5 fill-current" viewBox="0 0 20 20">
                       <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
@@ -541,12 +541,12 @@ export default function Home() {
                 <p className="text-gray-700 italic mb-6">
                   &quot;Kerstin captured our personalities and our love for nature perfectly. The handfasting ritual she wove in was the most magical, meaningful moment of the whole day. Truly bespoke and deeply authentic.&quot;
                 </p>
-                <p className="font-semibold text-[#1e3a2d]">— Emily & David, Forest Wedding, 2025</p>
+                <p className="font-semibold text-[#8b6f66]">— Emily & David, Forest Wedding, 2025</p>
               </div>
 
               {/* Review 2 */}
-              <div className="bg-white p-8 rounded-xl shadow-xl border-t-4 border-[#1e3a2d]">
-                <div className="flex text-[#1e3a2d] mb-4">
+              <div className="bg-white p-8 rounded-xl shadow-xl border-t-4 border-[#d4a59a]">
+                <div className="flex text-[#d4a59a] mb-4">
                   {[...Array(5)].map((_, i) => (
                     <svg key={i} className="w-5 h-5 fill-current" viewBox="0 0 20 20">
                       <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
@@ -556,12 +556,12 @@ export default function Home() {
                 <p className="text-gray-700 italic mb-6">
                   &quot;We wanted a secular ceremony for our child&apos;s naming, and Kerstin made it feel so special and inclusive. The tone was perfect—warm, respectful, and focused completely on our family&apos;s journey.&quot;
                 </p>
-                <p className="font-semibold text-[#1e3a2d]">— The Chen Family, Naming Ceremony, 2023</p>
+                <p className="font-semibold text-[#8b6f66]">— The Chen Family, Naming Ceremony, 2023</p>
               </div>
 
               {/* Review 3 */}
-              <div className="bg-white p-8 rounded-xl shadow-xl border-t-4 border-[#1e3a2d]">
-                <div className="flex text-[#1e3a2d] mb-4">
+              <div className="bg-white p-8 rounded-xl shadow-xl border-t-4 border-[#d4a59a]">
+                <div className="flex text-[#d4a59a] mb-4">
                   {[...Array(5)].map((_, i) => (
                     <svg key={i} className="w-5 h-5 fill-current" viewBox="0 0 20 20">
                       <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
@@ -571,7 +571,7 @@ export default function Home() {
                 <p className="text-gray-700 italic mb-6">
                   &quot;Her professionalism and calm presence were a lifeline during a difficult time. The memorial tribute she crafted was honest, heartfelt, and beautifully honoured our mother&apos;s spirit.&quot;
                 </p>
-                <p className="font-semibold text-[#1e3a2d]">— Sarah M., Memorial Service, 2025</p>
+                <p className="font-semibold text-[#8b6f66]">— Sarah M., Memorial Service, 2025</p>
               </div>
             </div>
           </div>
@@ -581,7 +581,7 @@ export default function Home() {
         <section id="story" className="py-24 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row gap-12 items-center">
             <div className="lg:w-1/3">
-              <div className="rounded-xl shadow-2xl overflow-hidden border-4 border-white">
+              <div className="rounded-xl shadow-2xl overflow-hidden border-4 border-[#e8c4b8]">
                 <Image
                   src="/KerstinO-scaled-e1603739338128-300x300-1.jpg"
                   alt="Kerstin Sandstrom - Licensed Ontario Celebrant"
@@ -593,8 +593,8 @@ export default function Home() {
               </div>
             </div>
             <div className="lg:w-2/3 space-y-6">
-              <span className="text-base font-semibold uppercase text-[#1e3a2d]">Meet Kerstin</span>
-              <h2 className="text-4xl font-bold text-[#1e3a2d] font-serif">The Officiant Behind the Knot</h2>
+              <span className="text-base font-semibold uppercase text-[#d4a59a]">Meet Kerstin</span>
+              <h2 className="text-4xl font-bold text-[#8b6f66] font-serif">The Officiant Behind the Knot</h2>
               <p className="text-lg text-gray-700 leading-relaxed">
                 Hello! I&apos;m Kerstin Sandstrom, a licensed Ontario Celebrant through Humanist Canada. My mission is to ensure your ceremony is not just a formality, but a <strong>profound, unforgettable piece of theatre</strong> rooted in your shared story.
               </p>
@@ -604,7 +604,7 @@ export default function Home() {
               <p className="text-gray-700 leading-relaxed font-semibold">
                 I am here to honor all relationships, identities, and spiritual backgrounds, ensuring your ceremony is exactly as you envision it.
               </p>
-              <button onClick={() => scrollToSection('contact')} className="inline-flex items-center text-[#1e3a2d] font-semibold hover:text-[#0f1f19] transition">
+              <button onClick={() => scrollToSection('contact')} className="inline-flex items-center text-[#d4a59a] font-semibold hover:text-[#b89086] transition">
                 Start the Conversation Today
                 <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
@@ -616,18 +616,18 @@ export default function Home() {
 
 
         {/* 8. FAQ Section */}
-        <section className="py-24 bg-stone-100">
+        <section className="py-24 bg-[#f4e4d7]">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
-              <span className="text-base font-semibold uppercase text-[#1e3a2d]">Common Questions</span>
-              <h2 className="mt-2 text-4xl font-bold text-[#1e3a2d] font-serif">Frequently Asked Questions</h2>
+              <span className="text-base font-semibold uppercase text-[#d4a59a]">Common Questions</span>
+              <h2 className="mt-2 text-4xl font-bold text-[#8b6f66] font-serif">Frequently Asked Questions</h2>
             </div>
 
             <div className="space-y-6">
-              <details className="bg-white rounded-xl p-6 shadow-lg border-l-8 border-[#1e3a2d] group">
-                <summary className="text-xl font-bold text-[#1e3a2d] cursor-pointer list-none flex justify-between items-center">
+              <details className="bg-white rounded-xl p-6 shadow-lg border-l-8 border-[#d4a59a] group">
+                <summary className="text-xl font-bold text-[#8b6f66] cursor-pointer list-none flex justify-between items-center">
                   Are you legally registered in Ontario?
-                  <svg className="w-5 h-5 text-[#1e3a2d] transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-5 h-5 text-[#d4a59a] transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                   </svg>
                 </summary>
@@ -636,10 +636,10 @@ export default function Home() {
                 </p>
               </details>
 
-              <details className="bg-white rounded-xl p-6 shadow-lg border-l-8 border-[#1e3a2d] group">
-                <summary className="text-xl font-bold text-[#1e3a2d] cursor-pointer list-none flex justify-between items-center">
+              <details className="bg-white rounded-xl p-6 shadow-lg border-l-8 border-[#d4a59a] group">
+                <summary className="text-xl font-bold text-[#8b6f66] cursor-pointer list-none flex justify-between items-center">
                   How far in advance should I book?
-                  <svg className="w-5 h-5 text-[#1e3a2d] transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-5 h-5 text-[#d4a59a] transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                   </svg>
                 </summary>
@@ -648,10 +648,10 @@ export default function Home() {
                 </p>
               </details>
 
-              <details className="bg-white rounded-xl p-6 shadow-lg border-l-8 border-[#1e3a2d] group">
-                <summary className="text-xl font-bold text-[#1e3a2d] cursor-pointer list-none flex justify-between items-center">
+              <details className="bg-white rounded-xl p-6 shadow-lg border-l-8 border-[#d4a59a] group">
+                <summary className="text-xl font-bold text-[#8b6f66] cursor-pointer list-none flex justify-between items-center">
                   What is a handfasting ceremony?
-                  <svg className="w-5 h-5 text-[#1e3a2d] transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-5 h-5 text-[#d4a59a] transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                   </svg>
                 </summary>
@@ -660,10 +660,10 @@ export default function Home() {
                 </p>
               </details>
 
-              <details className="bg-white rounded-xl p-6 shadow-lg border-l-8 border-[#1e3a2d] group">
-                <summary className="text-xl font-bold text-[#1e3a2d] cursor-pointer list-none flex justify-between items-center">
+              <details className="bg-white rounded-xl p-6 shadow-lg border-l-8 border-[#d4a59a] group">
+                <summary className="text-xl font-bold text-[#8b6f66] cursor-pointer list-none flex justify-between items-center">
                   Can we write our own vows?
-                  <svg className="w-5 h-5 text-[#1e3a2d] transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-5 h-5 text-[#d4a59a] transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                   </svg>
                 </summary>
@@ -679,14 +679,14 @@ export default function Home() {
         <section id="contact" className="py-24 bg-white">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
-              <span className="text-base font-semibold uppercase text-[#1e3a2d]">Book Your Date</span>
-              <h2 className="mt-2 text-4xl font-bold text-[#1e3a2d] font-serif">Inquire About Availability</h2>
+              <span className="text-base font-semibold uppercase text-[#d4a59a]">Book Your Date</span>
+              <h2 className="mt-2 text-4xl font-bold text-[#8b6f66] font-serif">Inquire About Availability</h2>
               <p className="text-lg text-gray-600 mt-4">
                 Please fill out this form to check my availability and receive a custom package quote.
               </p>
             </div>
 
-            <div className="bg-white p-8 md:p-12 rounded-xl shadow-2xl border border-gray-200">
+            <div className="bg-white p-8 md:p-12 rounded-xl shadow-2xl border border-[#e8c4b8]">
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
@@ -697,7 +697,7 @@ export default function Home() {
                     id="name"
                     name="name"
                     required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:border-[#1e3a2d] focus:ring-2 focus:ring-[#1e3a2d] focus:ring-opacity-50 transition"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:border-[#d4a59a] focus:ring-2 focus:ring-[#d4a59a] focus:ring-opacity-50 transition"
                   />
                 </div>
 
@@ -710,7 +710,7 @@ export default function Home() {
                     id="email"
                     name="email"
                     required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:border-[#1e3a2d] focus:ring-2 focus:ring-[#1e3a2d] focus:ring-opacity-50 transition"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:border-[#d4a59a] focus:ring-2 focus:ring-[#d4a59a] focus:ring-opacity-50 transition"
                   />
                 </div>
 
@@ -723,7 +723,7 @@ export default function Home() {
                       id="event_type"
                       name="event_type"
                       required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:border-[#1e3a2d] focus:ring-2 focus:ring-[#1e3a2d] focus:ring-opacity-50 transition"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:border-[#d4a59a] focus:ring-2 focus:ring-[#d4a59a] focus:ring-opacity-50 transition"
                     >
                       <option value="">Select an Option</option>
                       <option value="Wedding">Wedding / Handfasting</option>
@@ -741,7 +741,7 @@ export default function Home() {
                       type="date"
                       id="date"
                       name="date"
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:border-[#1e3a2d] focus:ring-2 focus:ring-[#1e3a2d] focus:ring-opacity-50 transition"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:border-[#d4a59a] focus:ring-2 focus:ring-[#d4a59a] focus:ring-opacity-50 transition"
                     />
                   </div>
                 </div>
@@ -756,13 +756,13 @@ export default function Home() {
                     rows={4}
                     required
                     placeholder="Where is the event? What makes your story unique?"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:border-[#1e3a2d] focus:ring-2 focus:ring-[#1e3a2d] focus:ring-opacity-50 transition"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:border-[#d4a59a] focus:ring-2 focus:ring-[#d4a59a] focus:ring-opacity-50 transition"
                   />
                 </div>
 
                 <button
                   type="submit"
-                  className="w-full bg-[#1e3a2d] text-white font-bold py-3 rounded-lg shadow-lg hover:bg-[#0f1f19] transition uppercase tracking-wider transform hover:scale-[1.01]"
+                  className="w-full bg-[#d4a59a] text-white font-bold py-3 rounded-lg shadow-lg hover:bg-[#b89086] transition uppercase tracking-wider transform hover:scale-[1.01]"
                 >
                   Send Inquiry
                 </button>
@@ -781,17 +781,17 @@ export default function Home() {
       </main>
 
       {/* Footer */}
-      <footer className="bg-[#1e3a2d] text-white py-12">
+      <footer className="bg-[#8b6f66] text-white py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="space-y-4">
             <h4 className="text-xl font-bold font-serif">Tie the Celtic Knot</h4>
-            <p className="text-gray-300">Humanist Officiant Services for Ontario, Canada</p>
-            <p className="text-gray-300">
-              <a href="mailto:kerstin@tiethecelticknot.ca" className="hover:text-[#1e3a2d] transition">
+            <p className="text-gray-200">Humanist Officiant Services for Ontario, Canada</p>
+            <p className="text-gray-200">
+              <a href="mailto:kerstin@tiethecelticknot.ca" className="hover:text-[#f4e4d7] transition">
                 kerstin@tiethecelticknot.ca
               </a>
             </p>
-            <div className="pt-4 text-sm text-gray-400">
+            <div className="pt-4 text-sm text-gray-300">
               &copy; {new Date().getFullYear()} Tie the Celtic Knot. All rights reserved.
             </div>
           </div>

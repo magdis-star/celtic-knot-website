@@ -56,9 +56,9 @@ export default function Home() {
             <Image
               src="/celtic-heart-logo.svg"
               alt="Tie the Celtic Knot - Celtic Heart Logo"
-              width={280}
-              height={45}
-              className="h-12 w-auto"
+              width={390}
+              height={60}
+              className="h-16 w-auto"
             />
           </button>
 

@@ -555,7 +555,7 @@ export default function Home() {
                 <p className="text-gray-700 italic mb-6">
                   &quot;We wanted a secular ceremony for our child&apos;s naming, and Kerstin made it feel so special and inclusive. The tone was perfect—warm, respectful, and focused completely on our family&apos;s journey.&quot;
                 </p>
-                <p className="font-semibold text-[#1e3a2d]">— The Chen Family, Naming Ceremony, 2023</p>
+                <p className="font-semibold text-[#1e3a2d]">— The Chen Family, Naming Ceremony, 2025</p>
               </div>
 
               {/* Review 3 */}

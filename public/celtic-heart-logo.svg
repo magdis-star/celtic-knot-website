@@ -1,37 +1,62 @@
 <svg width="400" height="450" viewBox="0 0 400 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Clip paths for creating over/under weaving effect -->
+    <clipPath id="clip1">
+      <rect x="150" y="80" width="100" height="30"/>
+    </clipPath>
+    <clipPath id="clip2">
+      <rect x="150" y="130" width="100" height="30"/>
+    </clipPath>
+    <clipPath id="clip3">
+      <rect x="120" y="105" width="30" height="100"/>
+    </clipPath>
+    <clipPath id="clip4">
+      <rect x="250" y="105" width="30" height="100"/>
+    </clipPath>
+  </defs>
+
   <!-- Celtic Heart Knot -->
   <g transform="translate(200, 160)">
-    <!-- Outer heart shape with Celtic knot weaving -->
+    <!-- Main heart outline -->
     <path d="M 0,-80 C -25,-110 -65,-110 -80,-85 C -95,-60 -95,-30 -80,-5 L 0,85 L 80,-5 C 95,-30 95,-60 80,-85 C 65,-110 25,-110 0,-80 Z"
-          fill="none" stroke="#1e3a2d" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+          fill="none" stroke="#1e3a2d" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
 
-    <!-- Inner Celtic knot pattern - interwoven design -->
-    <!-- Horizontal weave -->
-    <path d="M -40,-20 L -10,-20 L 10,0 L 40,0"
-          fill="none" stroke="#1e3a2d" stroke-width="14" stroke-linecap="round"/>
-    <path d="M 40,-20 L 10,-20 L -10,0 L -40,0"
-          fill="none" stroke="#1e3a2d" stroke-width="14" stroke-linecap="round"/>
+    <!-- Celtic knot pattern - Four loops interwoven -->
+    <!-- Top loop -->
+    <path d="M 0,-50 C -30,-50 -45,-35 -45,-5 C -45,5 -42,15 -35,20 C -28,15 -25,5 -25,-5 C -25,-20 -18,-30 0,-30 C 18,-30 25,-20 25,-5 C 25,5 28,15 35,20 C 42,15 45,5 45,-5 C 45,-35 30,-50 0,-50 Z"
+          fill="none" stroke="#1e3a2d" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
 
-    <!-- Vertical weave -->
-    <path d="M 0,-40 L 0,-10 L 20,10 L 20,40"
-          fill="none" stroke="#1e3a2d" stroke-width="14" stroke-linecap="round"/>
-    <path d="M 0,40 L 0,10 L -20,-10 L -20,-40"
-          fill="none" stroke="#1e3a2d" stroke-width="14" stroke-linecap="round"/>
+    <!-- Bottom loop -->
+    <path d="M 0,50 C -30,50 -45,35 -45,5 C -45,-5 -42,-15 -35,-20 C -28,-15 -25,-5 -25,5 C -25,20 -18,30 0,30 C 18,30 25,20 25,5 C 25,-5 28,-15 35,-20 C 42,-15 45,-5 45,5 C 45,35 30,50 0,50 Z"
+          fill="none" stroke="#1e3a2d" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
 
-    <!-- Center knot decoration -->
-    <circle cx="0" cy="0" r="8" fill="#1e3a2d"/>
+    <!-- Left loop -->
+    <path d="M -50,0 C -50,-30 -35,-45 -5,-45 C 5,-45 15,-42 20,-35 C 15,-28 5,-25 -5,-25 C -20,-25 -30,-18 -30,0 C -30,18 -20,25 -5,25 C 5,25 15,28 20,35 C 15,42 5,45 -5,45 C -35,45 -50,30 -50,0 Z"
+          fill="none" stroke="#1e3a2d" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
 
-    <!-- Celtic spiral accents in corners -->
-    <path d="M -35,-35 Q -30,-40 -25,-35 Q -30,-30 -35,-35"
-          fill="#1e3a2d"/>
-    <path d="M 35,-35 Q 30,-40 25,-35 Q 30,-30 35,-35"
-          fill="#1e3a2d"/>
+    <!-- Right loop -->
+    <path d="M 50,0 C 50,-30 35,-45 5,-45 C -5,-45 -15,-42 -20,-35 C -15,-28 -5,-25 5,-25 C 20,-25 30,-18 30,0 C 30,18 20,25 5,25 C -5,25 -15,28 -20,35 C -15,42 -5,45 5,45 C 35,45 50,30 50,0 Z"
+          fill="none" stroke="#1e3a2d" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
 
-    <!-- Decorative dots -->
-    <circle cx="-50" cy="-45" r="4" fill="#1e3a2d"/>
-    <circle cx="50" cy="-45" r="4" fill="#1e3a2d"/>
-    <circle cx="-55" cy="15" r="4" fill="#1e3a2d"/>
-    <circle cx="55" cy="15" r="4" fill="#1e3a2d"/>
+    <!-- Weaving gaps (white strokes to create over/under effect) -->
+    <!-- Top-Left weave -->
+    <path d="M -35,-20 L -25,-20" fill="none" stroke="#e8ede7" stroke-width="16" stroke-linecap="round"/>
+    <path d="M -20,-35 L -20,-25" fill="none" stroke="#e8ede7" stroke-width="16" stroke-linecap="round"/>
+
+    <!-- Top-Right weave -->
+    <path d="M 25,-20 L 35,-20" fill="none" stroke="#e8ede7" stroke-width="16" stroke-linecap="round"/>
+    <path d="M 20,-35 L 20,-25" fill="none" stroke="#e8ede7" stroke-width="16" stroke-linecap="round"/>
+
+    <!-- Bottom-Left weave -->
+    <path d="M -35,20 L -25,20" fill="none" stroke="#e8ede7" stroke-width="16" stroke-linecap="round"/>
+    <path d="M -20,25 L -20,35" fill="none" stroke="#e8ede7" stroke-width="16" stroke-linecap="round"/>
+
+    <!-- Bottom-Right weave -->
+    <path d="M 25,20 L 35,20" fill="none" stroke="#e8ede7" stroke-width="16" stroke-linecap="round"/>
+    <path d="M 20,25 L 20,35" fill="none" stroke="#e8ede7" stroke-width="16" stroke-linecap="round"/>
+
+    <!-- Center connection point -->
+    <circle cx="0" cy="0" r="6" fill="#1e3a2d"/>
   </g>
 
   <!-- Text: Tie the Celtic Knot -->

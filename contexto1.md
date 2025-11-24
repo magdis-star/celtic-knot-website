@@ -43,19 +43,21 @@ Built a modern, conversion-focused Next.js website with:
 
 ## Color Scheme
 
-### Final Colors (after multiple iterations)
-- **Primary Green:** `#1e3a2d` - Headers, footer, navigation
-- **Accent Bronze:** `#b45309` - CTAs, highlights, icons
+### Final Colors (November 2025 Update)
+- **Primary Green:** `#1e3a2d` - Headers, footer, navigation, buttons, icons, all CTAs
+- **Darker Green (hover):** `#0f1f19` - Button hover states
 - **Background Stone:** `#fafaf9` (stone-50) - Page background
 - **White:** `#ffffff` - Cards, content areas
+- **Yellow Accent:** `#fbbf24` (yellow-400) - "Most Popular" badge on pricing
 - **Wedding Section:** `linear-gradient(to bottom right, #e8f5e9, #dcedc8)` - Warm sage green with yellow undertones
 
-### Color Journey (rejected options)
+### Color Journey (all iterations)
 1. Orange `#d97706` - Initial color, too bright
 2. Teal `#0d9488` - Too cool/coastal
 3. Burgundy `#9f1239` - Romantic but not quite right
 4. Purple `#7c3aed` - User feedback: "too screaming"
-5. Bronze `#b45309` - ✅ APPROVED - Warm and elegant
+5. Bronze `#b45309` - Warm and elegant, approved initially
+6. Forest Green `#1e3a2d` - ✅ FINAL - Client preferred green/blue over bronze
 
 ## Project Structure
 
@@ -236,18 +238,44 @@ Add project context documentation
 - Deployment instructions
 ```
 
+## Recent Updates (November 19, 2025)
+
+### ✅ Completed Based on Client Feedback
+
+1. **Color Scheme Update** - Changed from bronze to forest green
+   - All buttons and accents now use forest green (#1e3a2d)
+   - Removed bronze (#b45309) throughout
+   - More cohesive with Celtic theme
+
+2. **Testimonial Dates** - Updated from 2024 to 2025
+   - Client approved keeping placeholder testimonials with 2025 dates
+
+3. **Pricing Packages Added** - Four comprehensive packages
+   - Deluxe Wedding Ceremony: $895 (highlighted as most popular)
+   - Full Service Wedding: $650
+   - Custom Ceremony: $450
+   - Basic Signing Package: $300
+   - All packages include detailed feature lists
+
+4. **Email Integration** - Contact form now functional
+   - Integrated with Formspree
+   - Sends to: kerstin@tiethecelticknot.ca
+   - Error handling with fallback instructions
+
+5. **Mobile/Tablet Optimization** - Verified responsive
+   - All sections fully responsive
+   - Pricing grid adapts: 1 column (mobile), 2 columns (tablet), 4 columns (desktop)
+
 ## Pending Tasks / Future Enhancements
 
 ### Critical (For Launch)
-1. **Email Integration** - Contact form needs actual email functionality
-   - Options: Formspree (easiest), EmailJS, or Resend
-   - Currently just shows success message
+1. **Real Testimonials** - Replace with actual client reviews when available
 
-2. **Real Testimonials** - Replace placeholder testimonials with actual client reviews
+2. **Optimize Images** - Hand-fast-1.jpg is large, should be optimized for web
 
-3. **Optimize Images** - Hand-fast-1.jpg is large, should be optimized for web
+3. **Add Favicon** - Browser tab icon needed
 
-4. **Add Favicon** - Browser tab icon needed
+4. **Japanese Language Version** - Awaiting translated content from client
 
 ### Optional Enhancements
 5. **Calendly Integration** - If client decides to add booking

@@ -140,7 +140,9 @@ export default function Home() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
             <div className="md:w-3/4 lg:w-2/3 space-y-6">
               <h1 className="text-5xl md:text-6xl font-extrabold font-serif leading-tight tracking-tight drop-shadow-lg">
-                Your Love Story. Woven with Meaning and Celtic Spirit.
+                Your Love Story.
+                <br />
+                Woven with Meaning and Celtic Spirit.
               </h1>
               <p className="text-xl md:text-2xl font-light leading-relaxed drop-shadow-md">
                 Licensed Humanist Officiant Kerstin Sandstrom specializes in bespoke ceremonies, from ancient handfasting rituals to modern, inclusive celebrations, grounded in nature and authenticity.

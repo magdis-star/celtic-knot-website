@@ -54,11 +54,11 @@ export default function Home() {
             className="flex items-center hover:opacity-90 transition"
           >
             <Image
-              src="/celtic-heart-logo.svg"
+              src="/logoceltic.svg"
               alt="Tie the Celtic Knot - Celtic Heart Logo"
-              width={420}
-              height={66}
-              className="h-[66px] w-auto"
+              width={300}
+              height={300}
+              className="h-20 w-auto"
             />
           </button>
 

@@ -54,7 +54,7 @@ export default function Home() {
             className="flex items-center hover:opacity-90 transition"
           >
             <Image
-              src="/logoceltic.svg"
+              src="/celtic-heart-logo.svg"
               alt="Tie the Celtic Knot - Celtic Heart Logo"
               width={300}
               height={300}
